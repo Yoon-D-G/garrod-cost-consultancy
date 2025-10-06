@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="font-serif bg-gray-900 text-white">
@@ -19,7 +21,7 @@ export default function Home() {
             </a>
           </div>
           <div className="hidden lg:block">
-            <img src="https://placehold.co/600x400/png?text=Professional+Consultancy" alt="Consultancy Image" className="rounded-lg shadow-lg" />
+            <Image src="https://placehold.co/600x400/png?text=Professional+Consultancy" alt="Consultancy Image" width={600} height={400} className="rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -51,11 +53,11 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-yellow-400 mb-12">What Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <blockquote className="p-6 bg-gray-800 rounded-lg shadow-md">
-              <p className="text-gray-300">"Saved us 25% on costs—highly recommend!"</p>
+              <p className="text-gray-300">&quot;Saved us 25% on costs—highly recommend!&quot;</p>
               <cite className="block text-right text-yellow-400">- Client A</cite>
             </blockquote>
             <blockquote className="p-6 bg-gray-800 rounded-lg shadow-md">
-              <p className="text-gray-300">"Professional and results-oriented service."</p>
+              <p className="text-gray-300">&quot;Professional and results-oriented service.&quot;</p>
               <cite className="block text-right text-yellow-400">- Client B</cite>
             </blockquote>
           </div>
